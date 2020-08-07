@@ -16,8 +16,8 @@ public class CoinController {
     @Autowired
     CoinRepository coinrepos;
 
-//    endpoint http://localhost:2019/coin/all
-    @GetMapping(value = "/coins/all", produces = {"application/json"})
+//    endpoint http://localhost:2019/total
+    @GetMapping(value = "/total", produces = {"application/json"})
     public ResponseEntity<?> listAllCoins(){
         List<Coin> myList = new ArrayList<>();
         coinrepos.findAll().iterator().forEachRemaining(myList::add);

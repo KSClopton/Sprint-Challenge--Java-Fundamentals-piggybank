@@ -15,12 +15,14 @@ import java.util.List;
 public class CoinController {
     @Autowired
     CoinRepository coinrepos;
+    private int total;
 
 //    endpoint http://localhost:2019/total
     @GetMapping(value = "/total", produces = {"application/json"})
     public ResponseEntity<?> listAllCoins(){
         List<Coin> myList = new ArrayList<>();
         coinrepos.findAll().iterator().forEachRemaining(myList::add);
-        return new ResponseEntity<>(myList, HttpStatus.OK);
+        for(Coin coin : myList) {System.out.println(coin);}
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

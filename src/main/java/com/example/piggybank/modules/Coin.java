@@ -12,10 +12,10 @@ public class Coin {
     private String name;
     private String nameplural;
     private double value;
-    private double quantity;
+    private int quantity;
 
 
-    public Coin(String name, String nameplural, double value, double quantity) {
+    public Coin(String name, String nameplural, double value, int quantity) {
         this.name = name;
         this.nameplural = nameplural;
         this.value = value;
@@ -61,7 +61,16 @@ public class Coin {
         return quantity;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        if(quantity == 1){
+            return quantity + " " + name;
+
+        }else
+            return quantity + " " + nameplural;
     }
 }

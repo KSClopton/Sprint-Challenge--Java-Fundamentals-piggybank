@@ -23,9 +23,29 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+    
+   The sprint challenge had us create end points for sql data that was provided to us. The way we implemented OOP for this object was through the use of classes and objects. 
+   These classes allowed us to make use of methods that combined with Spring, allowed to us to create an endpoint containing an arraylist based of the SQL data. 
+   
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+
+    a. Create class file from the .java files - All files must have a .class file
+    b. Compile the class files into a .jar file that we can do what we want with
+    c. execute the .jar file
+    
+    Java and Javascript are not really related at all - but every language must have steps to executing the program. In Javascript, we followed the following steps:
+    
+    a. Install necessary dependencies, frameworks, libraries - i.e. yarn, npm, react etc
+    b. Start application (even if you have written 0 code) - this allows you to see your application running in real time
+    c. Save and upload your code to the web using a site like Vercel, Netlify or another program that allows you to use a Domain address. 
+    
 3. Explain how Java being a strongly typed language affected you solution.
+
+    I had to declare each data type when I created my class. These related directly to the type of data that was in my SQL file. Once set, cannot change.
+    
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+
+    Abstract classes set the pattern for how things should be defined. And Interfaces must follow the pattern that it extends from the Abstract class.
 
 ## Instructions
 
